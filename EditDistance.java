@@ -56,6 +56,7 @@ public class EditDistance {
 
     /*
     DP solution
+    Time complexity: O(mn)
      */
     public static int editDistBetter(String str1, String str2) {
         int m = str1.length();
