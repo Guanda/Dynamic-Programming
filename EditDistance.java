@@ -76,7 +76,9 @@ public class EditDistance {
                     dp[i][j] = dp[i-1][j-1];
                 //last char is not same
                 else
-                    dp[i][j] = 1 + Math.min(dp[i][j-1], Math.min(dp[i-1][j], dp[i-1][j-1]));
+                    dp[i][j] = 1 + Math.min(dp[i][j-1], //insert
+                                Math.min(dp[i-1][j], //remove
+                                        dp[i-1][j-1])); //replace
             }
         }
         return dp[m][n];
