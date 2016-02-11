@@ -41,6 +41,7 @@ public class LongestCommonSequence {
 
     /*
     DP solution: Store the progress result to an array
+    Time complexity: O(mn)
      */
     public static int lcsBetter(String s1, String s2) {
         char[] charArr1 = s1.toCharArray();
